@@ -110,6 +110,8 @@ function matchRoute(route, baseUrl, path) {
 							params: match.params,
 						}
 					}
+				} else {
+          return {done:true, value:undefined}
 				}
 			}
 			while (childIdx < route.children.length) {
